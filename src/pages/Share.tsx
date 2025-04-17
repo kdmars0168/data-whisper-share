@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -7,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { AlertCircle, CheckCircle2, XCircle, Share, User, Mail, BarChart2, Calendar, Clock } from "lucide-react";
+import { AlertCircle, CheckCircle2, XCircle, Share as ShareIcon, User, Mail, BarChart2, Calendar, Clock } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import DashboardLayout from "@/components/layout/DashboardLayout";
 import { Switch } from "@/components/ui/switch";
@@ -34,7 +33,7 @@ const contacts = [
   { id: 5, name: "Emily Jones", email: "emily@example.com" }
 ];
 
-const Share = () => {
+const SharePage = () => {
   const { toast } = useToast();
   const [selectedVisualizations, setSelectedVisualizations] = useState<number[]>([1, 2]); // Default selected
   const [selectedContacts, setSelectedContacts] = useState<number[]>([]);
@@ -220,7 +219,7 @@ const Share = () => {
                 Selected: {selectedVisualizations.length} visualizations, {selectedContacts.length} recipients
               </div>
               <Button onClick={handleShare} disabled={selectedVisualizations.length === 0 || selectedContacts.length === 0}>
-                <Share className="mr-2 h-4 w-4" />
+                <ShareIcon className="mr-2 h-4 w-4" />
                 Share Now
               </Button>
             </CardFooter>
@@ -346,4 +345,4 @@ const Share = () => {
   );
 };
 
-export default Share;
+export default SharePage;

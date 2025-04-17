@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -12,7 +11,7 @@ import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import Upload from "./pages/Upload";
 import Visualize from "./pages/Visualize";
-import Share from "./pages/Share";
+import SharePage from "./pages/Share";
 import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
 
@@ -34,7 +33,7 @@ const App = () => (
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/upload" element={<Upload />} />
           <Route path="/visualize" element={<Visualize />} />
-          <Route path="/share" element={<Share />} />
+          <Route path="/share" element={<SharePage />} />
           <Route path="/profile" element={<Profile />} />
           
           {/* Fallback routes */}
