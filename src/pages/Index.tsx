@@ -55,11 +55,63 @@ const Index = () => {
               <div className="bg-white rounded-xl shadow-xl p-6 border relative overflow-hidden">
                 <div className="animate-pulse-light absolute -top-16 -right-16 w-32 h-32 bg-brand-purple/10 rounded-full"></div>
                 <div className="animate-pulse-light absolute -bottom-8 -left-8 w-24 h-24 bg-brand-teal/10 rounded-full"></div>
-                <img 
-                  src="https://source.unsplash.com/random/800x600/?dashboard" 
-                  alt="Dashboard Preview" 
-                  className="rounded-lg border shadow-sm"
-                />
+                
+                {/* Dashboard Preview */}
+                <div className="rounded-lg border shadow-sm overflow-hidden">
+                  {/* Header */}
+                  <div className="bg-muted/30 p-4 border-b">
+                    <div className="flex justify-between items-center">
+                      <div className="flex items-center gap-2">
+                        <div className="h-3 w-3 rounded-full bg-brand-purple"></div>
+                        <div className="h-3 w-24 bg-muted rounded"></div>
+                      </div>
+                      <div className="flex gap-2">
+                        <div className="h-6 w-6 rounded bg-muted"></div>
+                        <div className="h-6 w-6 rounded bg-muted"></div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Dashboard Content */}
+                  <div className="p-4 bg-white">
+                    <div className="grid grid-cols-2 gap-4 mb-4">
+                      <div className="p-3 border rounded-md bg-background">
+                        <div className="h-3 w-20 bg-muted rounded mb-3"></div>
+                        <div className="h-24 bg-brand-purple/10 rounded-md flex items-center justify-center">
+                          <BarChart2 className="h-12 w-12 text-brand-purple/60" />
+                        </div>
+                      </div>
+                      <div className="p-3 border rounded-md bg-background">
+                        <div className="h-3 w-24 bg-muted rounded mb-3"></div>
+                        <div className="h-24 bg-brand-teal/10 rounded-md flex items-center justify-center">
+                          <LineChart className="h-12 w-12 text-brand-teal/60" />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="p-3 border rounded-md bg-background mb-4">
+                      <div className="h-3 w-28 bg-muted rounded mb-3"></div>
+                      <div className="h-40 bg-brand-orange/10 rounded-md flex items-center justify-center">
+                        <div className="flex items-center justify-center">
+                          <div className="h-28 w-28 rounded-full border-8 border-brand-purple/40 relative">
+                            <div className="h-24 w-24 rounded-full border-8 border-brand-teal/40"></div>
+                            <div className="absolute top-2 left-2 h-20 w-20 rounded-full border-8 border-brand-orange/40"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-3 gap-2">
+                      <div className="h-10 bg-muted/30 rounded flex items-center justify-center">
+                        <div className="h-2 w-16 bg-muted rounded"></div>
+                      </div>
+                      <div className="h-10 bg-muted/30 rounded flex items-center justify-center">
+                        <div className="h-2 w-12 bg-muted rounded"></div>
+                      </div>
+                      <div className="h-10 bg-muted/30 rounded flex items-center justify-center">
+                        <div className="h-2 w-14 bg-muted rounded"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
