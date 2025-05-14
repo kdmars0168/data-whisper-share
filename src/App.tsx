@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -12,6 +13,7 @@ import Dashboard from "./pages/Dashboard";
 import Upload from "./pages/Upload";
 import Visualize from "./pages/Visualize";
 import SharePage from "./pages/Share";
+import SharedWithMe from "./pages/SharedWithMe";
 import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
 
@@ -34,6 +36,7 @@ const App = () => (
           <Route path="/upload" element={<Upload />} />
           <Route path="/visualize" element={<Visualize />} />
           <Route path="/share" element={<SharePage />} />
+          <Route path="/shared-with-me" element={<SharedWithMe />} />
           <Route path="/profile" element={<Profile />} />
           
           {/* Fallback routes */}

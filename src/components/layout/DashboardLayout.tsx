@@ -8,7 +8,8 @@ import {
   Share2, 
   User, 
   LogOut, 
-  Home
+  Home,
+  Users
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
@@ -80,6 +81,12 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
             label="Share" 
             to="/share" 
             active={location.pathname === "/share"}
+          />
+          <NavItem 
+            icon={Users} 
+            label="Shared With Me" 
+            to="/shared-with-me" 
+            active={location.pathname === "/shared-with-me"}
           />
           <NavItem 
             icon={User} 
